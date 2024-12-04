@@ -24,4 +24,7 @@ export const TRANSLATION_EN = {
   pilaresLocationTitle: 'Where We Are',
   pilaresLocationSubtitle: 'You can click on the image to open the map.',
   pilaresStudioTitle: 'Our Studio',
+
+  dialogLoginClientTitle: 'Dear Client',
+  dialogLoginClientMessage: `We're working to enhance your experience. Soon, you'll be able to book your Pilates classes online quickly and easily. Thank you for your patience as we prepare this new feature for you!`,
 };

@@ -18,6 +18,12 @@ $primary-color: #f3eeeefa;
     display: flex;
     padding-right: 2rem;
     position: relative;
+
+    &-btn {
+     all: unset;
+      
+    }
+
     &:hover {
       cursor: pointer;
       color: rgb(97, 241, 69);

@@ -24,4 +24,8 @@ export const TRANSLATION_AR = {
   pilaresLocationTitle: 'Donde estamos',
   pilaresLocationSubtitle: 'Podés hacer click en la imagen para ir al mapa',
   pilaresStudioTitle: 'Nuestro Studio',
+
+  dialogLoginClientTitle: 'Estimados Socios',
+  dialogLoginClientMessage:
+    'Estamos trabajando para mejorar tu experiencia. Muy pronto podrás reservar tus clases de Pilates en línea de forma rápida y sencilla. ¡Gracias por tu paciencia mientras preparamos esta nueva funcionalidad para ti!"',
 };
