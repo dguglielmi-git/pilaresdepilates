@@ -28,7 +28,7 @@ const Footer = () => {
             </span>
             <span>
               <h4 className={roboto400.className}>
-                <strong className={Styles['strong']}>{t('footerAddress')}</strong> Combate de los Pozos 433 - CABA
+                <strong className={Styles['strong']}>{t('footerAddress')}</strong> Combate de los Pozos 433 - Capital Federal, Buenos Aires, Argentina
               </h4>
             </span>
             <span>
