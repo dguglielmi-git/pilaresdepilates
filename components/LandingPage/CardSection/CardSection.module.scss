@@ -1,0 +1,35 @@
+.cardsection-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    color: white;
+    text-align: center;
+
+    &__title {
+        background-color: #cc1bf8;
+        margin-top: -20px;
+        padding-bottom: 20px;
+        
+        h1 {
+            font-size: 40px;
+        }
+
+        h4 {
+            color: rgb(252, 226, 226);
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #cc1bf8;
+        margin-top: -0.5rem;
+    }
+
+    &__waves {
+        display: flex;
+        width: 100vw;
+        margin-bottom: -1rem;
+    }
+}

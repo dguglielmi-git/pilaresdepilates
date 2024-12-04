@@ -1,0 +1,59 @@
+$primary-color: #f3eeeefa;
+
+.header-app {
+  display: flex;
+  background-color: #343d4a;
+  color: rgb(241, 221, 198);
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 1px solid #293241;
+  box-shadow: 0 2px 5px rgba(190, 145, 145, 0.2);
+
+  &__menu {
+    display: flex;
+    padding-right: 2rem;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+      color: rgb(97, 241, 69);
+    }
+  }
+  &__menu-dropdown {
+    display: flex;
+    padding-right: 2rem;
+    position: relative;
+    align-items: center;
+
+    &-flag {
+      width: 20px;
+      height: 15px;
+      margin-right: 0.5rem;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__menu-dropdown::after {
+    content: '\25BC'; 
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 0.7rem;
+
+    &:hover {
+      cursor: pointer;
+      color: rgb(97, 241, 69);
+    }
+  }
+}
+
+:export {
+  primaryColor: $primary-color;
+}

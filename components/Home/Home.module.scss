@@ -1,0 +1,18 @@
+.home {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(244, 243, 243);
+
+    &__left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        padding: 0.5rem;
+    }
+
+    &__right {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

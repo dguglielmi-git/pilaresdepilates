@@ -1,0 +1,93 @@
+.sidemenu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  flex-wrap: wrap;
+  background-color: rgb(238, 238, 238);
+  width: 19rem;
+  height: 95vh;
+  border-radius: 0.5rem;
+  border: 0.1em solid rgb(190, 189, 189);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 16rem;
+    border-bottom: 1px solid rgb(182, 178, 178);
+    flex: 0 0 auto;
+
+    &-logo {
+      display: flex;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(79, 78, 78, 0.4);
+    }
+  }
+
+  &__menuarea {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 0vh;
+    max-height: 63vh;
+    overflow: auto;
+    flex: 1 1 auto;
+
+    &-menuitem {
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 0.3rem;
+      width: 14.5rem;
+      height: 2.5rem;
+
+      &:hover {
+        background-color: rgb(220, 227, 238);
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+      }
+
+      &-icon {
+        display: flex;
+        margin-left: 2rem;
+      }
+
+      &-text {
+        display: flex;
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
+
+      &.active {
+        background-color: rgb(4, 71, 134);
+        color: white !important;
+      }
+
+      &-subitem {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: 1rem;
+        width: 100%;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-self: center;
+    width: 15rem;
+    flex: 0 0 auto;
+    height: 80px;
+    border-top: 1px solid rgb(182, 178, 178);
+  }
+}
