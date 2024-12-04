@@ -12,19 +12,19 @@ const CardSection = () => {
     {
       name: i18n.t('pilaresFirstCardCardName'),
       title: i18n.t('pilaresFirstCardCardTitle'),
-      content: i18n.t('pilaresFirstCardPrice'),
+      content: '$26.000',
       imageUrl: '/pilates-one.jpg',
     },
     {
       name: i18n.t('pilaresSecondCardCardName'),
       title: i18n.t('pilaresSecondCardCardTitle'),
-      content: i18n.t('pilaresSecondCardPrice'),
+      content: '$33.000',
       imageUrl: '/pilates-two.jpg',
     },
     {
       name: i18n.t('pilaresThirdCardCardName'),
       title: i18n.t('pilaresThirdCardCardTitle'),
-      content: i18n.t('pilaresThirdCardPrice'),
+      content: '$40.000',
       imageUrl: '/pilates-three.jpg',
     },
   ];
@@ -34,10 +34,9 @@ const CardSection = () => {
       <Waves />
 
       <section className={Styles['cardsection-container__title']}>
-        <h1>Nuestros Planes</h1>
+        <h1>{i18n.t('pilaresPlanSectionTitle')}</h1>
         <h4>
-          Elige el plan que mejor se ajuste a tu estilo de vida y comienza a transformar tu bienestar con nuestro
-          estudio de Pilates.
+        {i18n.t('pilaresPlanSectionSubtitle')}
         </h4>
       </section>
       <div className={Styles['cardsection-container__cards']}>

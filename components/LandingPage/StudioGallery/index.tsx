@@ -1,6 +1,7 @@
 import { Galleria, GalleriaResponsiveOptions } from 'primereact/galleria';
 import Styles from './StudioGallery.module.scss';
 import { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface Item {
   itemImageSrc?: string;
@@ -10,6 +11,7 @@ interface Item {
 }
 
 const StudioGallery = () => {
+  const { i18n } = useTranslation();
   //   const [images, setImages] = useState<Item[] | undefined>([]);
   const responsiveOptions: GalleriaResponsiveOptions[] = [
     {
@@ -56,7 +58,7 @@ const StudioGallery = () => {
   return (
     <section className={Styles['studio-gallery']}>
       <section className={Styles['studio-gallery__title']}>
-        <h1>Nuestro Studio</h1>
+        <h1>{i18n.t('pilaresStudioTitle')}</h1>
       </section>
       <section className={Styles['studio-gallery__gallery']}>
         <Galleria
