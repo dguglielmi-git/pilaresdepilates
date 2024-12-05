@@ -3,6 +3,7 @@ import { roboto400, roboto900 } from '@/styles/fonts/RobotoFonts';
 import Image from 'next/image';
 import Styles from './Footer.module.scss';
 import { useTranslation } from 'react-i18next';
+import Link from 'next/link';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -28,15 +29,22 @@ const Footer = () => {
             </span>
             <span>
               <h4 className={roboto400.className}>
-                <strong className={Styles['strong']}>{t('footerAddress')}</strong> Combate de los Pozos 433 - Capital Federal, Buenos Aires, Argentina
+                <strong className={Styles['strong']}>{t('footerAddress')}</strong> Combate de los Pozos 433 - Capital
+                Federal, Buenos Aires, Argentina
               </h4>
             </span>
             <span>
               <h4 className={roboto400.className}>
-                <strong className={Styles['strong']}>{t('footerPhone')}</strong> +54 11-7161-0644
+                <strong className={Styles['strong']}>{t('footerPhone')}</strong>{' '}
+                <Link
+                  href='https://w.app/PilaresDePilates'
+                  target='_blank'
+                  className={Styles['footer__container-contact__whatsapp']}
+                >
+                  +54 11-7161-0644
+                </Link>
               </h4>
             </span>
-            
           </div>
         </div>
       </div>
