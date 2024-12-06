@@ -27,5 +27,5 @@ export const TRANSLATION_AR = {
 
   dialogLoginClientTitle: 'Estimados Socios',
   dialogLoginClientMessage:
-    'Estamos trabajando para mejorar tu experiencia. Muy pronto podrás reservar tus clases de Pilates en línea de forma rápida y sencilla. ¡Gracias por tu paciencia mientras preparamos esta nueva funcionalidad para ti!"',
+    'Estamos trabajando para mejorar tu experiencia. Muy pronto podrás reservar tus clases de Pilates en línea de forma rápida y sencilla. ¡Gracias por tu paciencia mientras preparamos esta nueva funcionalidad para vos!"',
 };
